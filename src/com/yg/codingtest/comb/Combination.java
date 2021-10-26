@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class Combination {
     // 선택하고자 하는 대상 집합.
-    static int[] target = new int[] { 1, 2, 3 };
+    static int[] target = new int[] { 1, 2, 3, 4 };
     // 대상 숫자를 담아둘 배열.
     static int[] result = new int[2];
 
@@ -19,7 +19,7 @@ public class Combination {
             return;
         }
         // 대상 집합을 주어진 인덱스부터 순회하며 숫자를 하나 선택한다.
-        for (int i = idx; i < 3; i++) {
+        for (int i = idx; i < 4; i++) {
             // 숫자를 담는다.
             result[cnt] = target[i];
             // 자신을 재귀 호출한다(자신 이전의 수를 중복 선택하지 않도록 인덱스를 +1하여 재귀를 호출한다).
